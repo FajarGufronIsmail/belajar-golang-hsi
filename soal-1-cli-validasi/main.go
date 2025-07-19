@@ -40,9 +40,9 @@ func main() {
 	err := validateData(name, age)
 	if err != nil {
 		if errors.Is(err, validErrName) {
-			fmt.Println(validErrName)
+			fmt.Printf("Error: %s\n", validErrName)
 		} else if errors.Is(err, validErrAge) {
-			fmt.Println(validErrAge)
+			fmt.Printf("Error: %s\n", validErrAge)
 		}
 	}
 
