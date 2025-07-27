@@ -19,9 +19,12 @@ func main() {
 	//hardcode untuk versi package dan nilai maksimum
 	fmt.Printf("Versi Package: %s \n", mahasiswa.Version)
 	fmt.Printf("Nilai Maksimum: %d \n", mahasiswa.GetMaxNilai())
-	sum := []int{fajar.GetUmur(), ismail.GetUmur()} //Membuat slice untuk menghitung total umur mahasiswa
+	//sum := []int{fajar.GetUmur(), ismail.GetUmur()} //Membuat slice untuk menghitung total umur mahasiswa
+	// fmt.Printf(
+	// 	"Total Umur Mahasiswa: %d \n", mahasiswa.SumAge(sum...),
+	// )
 	fmt.Printf(
-		"Total Umur Mahasiswa: %d \n", mahasiswa.SumAge(sum...),
+		"Total Umur Mahasiswa: %d \n", mahasiswa.SumAge(fajar.GetUmur(), ismail.GetUmur()),
 	)
 
 }
